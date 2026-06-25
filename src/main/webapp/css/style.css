@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+    background: #1a3c6e;
+    color: white;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-links a, .nav-links span {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---- Auth Pages ---- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a3c6e, #2d7dd2);
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    width: 420px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+.bank-logo {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.bank-logo h1 {
+    color: #1a3c6e;
+    font-size: 1.5rem;
+}
+
+.bank-logo p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 4px;
+}
+
+/* ---- Forms ---- */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    color: #555;
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    transition: border 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #2d7dd2;
+}
+
+.form-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.form-row .form-group {
+    flex: 1;
+    min-width: 180px;
+}
+
+/* ---- Buttons ---- */
+.btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.btn-primary {
+    background: #1a3c6e;
+    color: white;
+    width: 100%;
+}
+
+.btn-primary:hover { background: #14305a; }
+
+.btn-secondary {
+    background: #e2e8f0;
+    color: #333;
+}
+
+.btn-danger {
+    background: #e53e3e;
+    color: white;
+}
+
+.btn-sm {
+    padding: 5px 12px;
+    font-size: 0.82rem;
+}
+
+/* ---- Alerts ---- */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+}
+
+.alert.success {
+    background: #c6f6d5;
+    color: #276749;
+    border: 1px solid #9ae6b4;
+}
+
+.alert.error {
+    background: #fed7d7;
+    color: #9b2c2c;
+    border: 1px solid #fc8181;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.auth-link a {
+    color: #2d7dd2;
+    text-decoration: none;
+}
+
+/* ---- Container & Cards ---- */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 28px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+    color: #1a3c6e;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.form-card .btn-primary {
+    width: auto;
+}
+
+/* ---- Account Summary ---- */
+.account-info {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.info-item .label {
+    font-size: 0.8rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-item .value {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.balance {
+    font-size: 1.4rem !important;
+    color: #1a3c6e !important;
+}
+
+.status-active {
+    color: #276749 !important;
+}
+
+.sub {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+/* ---- Transaction Table ---- */
+.txn-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.txn-table th {
+    background: #f7f9fc;
+    padding: 10px 14px;
+    text-align: left;
+    color: #555;
+    font-weight: 600;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.txn-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e2e8f0;
+    color: #333;
+}
+
+.txn-table tr:hover td {
+    background: #f7f9fc;
+}
+
+/* ---- Badges ---- */
+.badge {
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.credit { background: #c6f6d5; color: #276749; }
+.badge.debit  { background: #fed7d7; color: #9b2c2c; }
+.badge.transfer { background: #bee3f8; color: #2a69ac; }
